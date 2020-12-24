@@ -34,6 +34,6 @@ elPassword2.addEventListener("blur",function(){
 
 let metallicaLink = document.getElementById("matallicaLink");
 metallicaLink.addEventListener("click", function( {
-    .eventpreventDefault();
+    event.preventDefault();
     alert(metallicaLink.href);
 });
