@@ -1,5 +1,5 @@
 function transformUppercase(){
-    let a = document.getElementById("namaPenggguna");
+    let a = document.getElementById("namaPenguna");
     a.value = a.value.toUpperCase(); 
 }
 
