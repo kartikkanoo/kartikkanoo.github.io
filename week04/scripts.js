@@ -1,4 +1,4 @@
-function transformUppercase(){
+function transformUppercase() {
     let a = document.getElementById("namaPenguna");
     a.value = a.value.toUpperCase(); 
 }
