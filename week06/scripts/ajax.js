@@ -16,7 +16,7 @@ function getRandomUser(){
     }
 
     xhttp.open("GET","https://randomuser.me.api/",true);
-    xhttp.send();
+    xhttps.send();
 }
 
 let elGetRandomUser = document.getElementById("getRandomUserBtn");
