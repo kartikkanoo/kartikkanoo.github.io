@@ -1,4 +1,4 @@
-window.onload = function(){
+window.onload = function() {
     let video = document.getElementById("myVideo");
     
     let playBtn = document.getElementById("playBtn");
