@@ -11,7 +11,7 @@ function getRandomUser() {
            let elPhone = document.getElementById("phone");
            let elEmail = document.getElementById("email");
 
-           elFirstName.innerHTML = data.result[0].name.first;
+           elFirstName.innerHTML = data.results[0].name.first;
 
            elJsonResult.innerHTML = this.response;
        } 
