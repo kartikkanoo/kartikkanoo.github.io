@@ -1,5 +1,5 @@
 function getRandomUser(){
-    let xhttp = XMLHttpRequest(); //create request obj
+    let xhttp = new XMLHttpRequest(); //create request obj
 
     xhttp.onreadystatechange = function(){
        if(this.readystate == 4 && this.status == 200){
