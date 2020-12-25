@@ -2,8 +2,8 @@ function haversine(lat1, lon1, lat2, lon2) {
     let R = 6371; // earth radius in KM
     let dLat = (lat2-lat1).torad();
     let dLon = (lon2-lon1).torad();
-    let lat1 = lat1.torad();
-    let lat2 = lat2.torad();
+    lat1 = lat1.torad();
+    lat2 = lat2.torad();
 
     let a = Math.sin(dLat/2) * Math.sin(dLat/2) + Math.sin(dLon/2) * Math.sin(dLon/2) * Math.cos(lat1) * Math.cos(lat2);
     let c = 2 * Math.atan2(Math.sqrt(a),Math.sqrt(1-a));
@@ -53,7 +53,7 @@ elLocate.addEventListener("click",function(){
             elDepulze.innerHTML = "Distance to De Pulze, CJ is " + distances[0];
             elSunway.innerHTML = "Distance to Sunway Pyramid is " + distances[1];
             elKlcc.innerHTML = "Distance to KLCC is " + distances[3];
-            
+
         });
     } else {
         alert("Geolocation is not supported")
