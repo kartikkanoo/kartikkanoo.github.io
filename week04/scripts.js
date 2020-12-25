@@ -1,5 +1,5 @@
 function transformUppercase() {
-    let a = document.getElementById("namaPenguna");
+    let a = document.getElementById("namaPengguna");
     a.value = a.value.toUpperCase(); 
 }
 
@@ -7,7 +7,7 @@ let elUsername = document.getElementById("namaPengguna");
 elUsername.addEventListener("keyup", transformUppercase);
 
 function checkPasswordLength(){
-    let password = document.getElementById("katalaluan").value;
+    let password = document.getElementById("kataLaluan").value;
     if(password.length < 5) {
         alert("Password must be more than 5 characters");
     } else {
@@ -18,7 +18,7 @@ function checkPasswordLength(){
 let elPassword = document.getElementById("kataLaluan");
 elPassword.onblur = checkPasswordLength;
 
-function checkPasswordLength2(txt){
+function checkPasswordLength2(txt) {
     if(txt.length < 5) {
         alert("Password must be more than 5 characters");
     } else {
@@ -27,13 +27,13 @@ function checkPasswordLength2(txt){
 }
 
 let elPassword2 = document.getElementById("kataLaluan2");
-elPassword2.addEventListener("blur",function(){
-    let a = document.getElementById("kataLaluan");
-    checkPasswordLength2(a.value)
+elPassword2.addEventListener("blur",function () {
+    let a = document.getElementById("kataLaluan2");
+    checkPasswordLength2(a.value);
 });
 
 let metallicaLink = document.getElementById("matallicaLink");
-metallicaLink.addEventListener("click", function( {
+metallicaLink.addEventListener("click", function() {
     event.preventDefault();
     alert(metallicaLink.href);
 });
