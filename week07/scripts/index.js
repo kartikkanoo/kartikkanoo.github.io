@@ -1,5 +1,5 @@
-let app1 = new Vue({
-    el: "#app1",
+let app = new Vue({
+    el: "#app",
     data: {
         message: "Hello Vue!"
     }
@@ -35,5 +35,17 @@ let app4 = new Vue({
                 text: "Build something awesome!"
             }
         ]
+    }
+});
+
+let app5 = new Vue({
+    el: "#app5",
+    data: {
+        message: "Hakim Ariff"
+    },
+    methods: {
+        reverseMessage: function () {
+            this.message = this.message.split("").reverse().join("");
+        }
     }
 });
