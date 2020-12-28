@@ -5,7 +5,7 @@ function GetBookings() {
         .then(json => {
             // Do something with the data
             //console.log(json.bookings);
-            let bookingList = document.getElementById("getbookingList");
+            let bookingList = document.getElementById("booking-List");
             let bookingIds = [];
 
             //clear the table rows
@@ -18,10 +18,10 @@ function GetBookings() {
                 let gEmail = json.bookings[i].email;
                 let gPax = json.bookings[i].pax;
                 let gId = json.bookings[i].id;
-                let gRemarks = json.bookings[i], remarks;
+                let gRemarks = json.bookings[i].remarks;
                 let buttonId = "delete" + gId;
 
-                let row = bookingList.insertRow(bookingList, rows, length);
+                let row = bookingList.insertRow(bookingList.rows.length);
                 row.insertCell(0).innerHTML = gId;
                 row.insertCell(1).innerHTML = gName;
                 row.insertCell(2).innerHTML = gEmail;
